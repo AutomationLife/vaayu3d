@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaayu 3D — Coming Soon</title>
+  <meta name="description" content="Vaayu 3D — 3D prints, sales and support. Our website is under development. We will unveil it soon." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vaayu3d.in/" />
+  <link rel="icon" type="image/png" href="brand/mark.png" />
+  <link rel="apple-touch-icon" href="brand/mark.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vaayu3d.in/" />
+  <meta property="og:title" content="Vaayu 3D — Coming Soon" />
+  <meta property="og:description" content="3D prints, sales and support. Website under development — unveiling soon." />
+  <meta property="og:image" content="https://vaayu3d.in/brand/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --navy: #0b2a5b;
+      --navy-dark: #061a3a;
+      --blue: #1f6fd1;
+      --orange: #f39a2a;
+      --ink: #e8eef8;
+      --muted: #9fb2d1;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(31, 111, 209, 0.35), transparent 60%),
+        radial-gradient(800px 500px at 0% 100%, rgba(243, 154, 42, 0.18), transparent 60%),
+        linear-gradient(180deg, var(--navy-dark) 0%, var(--navy) 100%);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 20px;
+      padding: 48px 32px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .logo-wrap {
+      display: block;
+      width: min(100%, 420px);
+      margin: 0 auto 32px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 16px 24px;
+    }
+
+    .logo-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange);
+      border: 1px solid rgba(243, 154, 42, 0.45);
+      border-radius: 999px;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+    }
+
+    .badge .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--orange);
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+    }
+
+    h1 span { color: var(--orange); }
+
+    p.lead {
+      font-size: clamp(16px, 2.2vw, 19px);
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .services span {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: rgba(31, 111, 209, 0.25);
+      border: 1px solid rgba(31, 111, 209, 0.5);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+
+    .contact {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .contact a {
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .contact a:hover { border-bottom-color: var(--orange); color: var(--orange); }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .badge .dot { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" aria-labelledby="title">
+      <div class="logo-wrap">
+        <img src="brand/logo.png" alt="Vaayu 3D — Prints · Sales · Support" width="720" height="310" />
+      </div>
+
+      <div class="badge" role="status"><span class="dot" aria-hidden="true"></span> Under Development</div>
+
+      <h1 id="title">Something new is <span>taking shape</span>.</h1>
+
+      <p class="lead">
+        Our website is currently under development. We&rsquo;re putting the finishing touches on it
+        and will unveil it soon. Thank you for your patience.
+      </p>
+
+      <div class="services" aria-label="Services">
+        <span>3D Prints</span>
+        <span>Sales</span>
+        <span>Support</span>
+      </div>
+
+      <!-- Update or remove this line with your real contact details -->
+      <p class="contact">
+        Questions in the meantime? Write to us at
+        <a href="https://wa.me/6362670207" target="_blank" rel="noopener">WhatsApp: 6362670207</a>
+  
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Vaayu 3D. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
